@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Gradiente SGV</title>
+</head>
+
+<body>
+    <svg id="svgxml">
+        <defs>
+            <!--Para criar o gradiente usamos a tag <defs>, aqui iremos definir nosso gradientes.-->
+            <linearGradient id="grad1" x1="0%" y1="0%" x2="0%" y2="100%">
+                <!--Nesta tag iremos definir as configurações básicas do nosso gradiente, 
+                    posição inicial (x1,y1) e posição final (x2,y2), com esta configuração 
+                    nosso gradiente tem a variação na vertical, de cima para baixo.-->
+                <stop offset="0%" style="stop-color:rgb(255,0,0);stop-opacity:1" />
+                <!--Primeira cor, offset define a posição: neste caso a primeira cor, posição 
+                    0%. Em stop-color definimos a primeira cor como vermelho (255,0,0) e 
+                    opacidade 100% (1).-->
+                <stop offset="50%" style="stop-color:rgb(0,0,255);stop-opacity:1" />
+                <!--Segunda cor, offset define a posição: neste caso a segunda cor, posição 
+                    50% (metade). Em stop-color definimos a segunda cor como azul (0,0,255) e 
+                    opacidade 100% (1).-->
+                <stop offset="100%" style="stop-color:rgb(255,255,0);stop-opacity:1" />
+                <!--Terceira cor, offset define a posição: neste caso a terceira e última cor, 
+                    posição 100%.Em stop-color definimos a terceira cor como amarelo 
+                    (255,255,0) e opacidade 100% (1).-->
+            </linearGradient>
+        </defs>
+        <rect x="50" y="50" width="400" height="400" fill="url(#grad1)">
+        <!--Aqui criamos um retângulo e no parâmetro “fill” adicionamos o gradiente com 
+            id “grad1”, note que este ID foi configurado na tag <linearGradient>.-->
+    </svg>
+</body>
+
+</html>

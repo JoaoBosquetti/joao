@@ -1,0 +1,24 @@
+#svgxml {
+    background: #EEE;
+    width: 500px;
+    height: 500px;
+}
+
+#r1 {
+    width: 420px;
+    height: 250px;
+    fill: #080;
+    x: 30px;
+    y: 50px;
+}
+
+#p1 {
+    fill: #FF0;
+}
+
+#c1 {
+    cx: 245px;
+    cy: 175px;
+    r: 75px;
+    fill: #00F;
+}
